@@ -22,6 +22,69 @@ a {
     transition: .5s;
 }
 
+/*---------------------SECTION_2_WHO_WE_ARE------------------- */
+.WhoWeAre {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 90%;
+    margin-top: 50px;
+    margin-bottom: 170px;
+    margin-left: 9%;
+    font-size: 17px;
+} 
+
+.imageBeer img {
+    border-radius: 0;
+    margin-top: 14%;
+}
+
+.imageBeerCaption {
+position: absolute;
+font-family: 'Comfortaa'; 
+border: solid 3px white;
+width: 180px;
+background-color: #AF0102;
+color: white;
+font-size: 16px;
+left: 12.7%;
+top: 115px;
+}
+
+
+.rightsideImage {
+display: flex;
+flex-direction: column;
+margin-top: 100px;
+margin-left: 40px;
+margin-bottom: 70px;
+width: 50% ;
+text-align: justify;
+}
+
+.paraone {
+margin-bottom: -50px;
+color:darkgray;
+}
+
+.paratwo {
+color: darkgray;
+width: 57%;
+margin-left: 240px;
+margin-top: -160px;
+font-size: 17px;
+margin-bottom: 100px;
+text-align: justify;
+}
+
+
+/* .paragraphsWhoWeAre {
+    color: darkgrey;   
+   /* margin-left: 510px; */
+   font-size: 18px;
+   text-align: justify;
+} */
+
 /*---------------------SECTION_3_OUR_TEAM------------------- */
 section {
     width: 80vw;
@@ -134,9 +197,9 @@ img {
 .boxesEvent {
     display: flex;
     height: 38%;
-    width: 62%;
+    width: 69%;
     margin-top: 3%;
-    margin-left: 17%;
+    margin-left: 15%;
 }
 
 .redboxSalsa {
@@ -162,6 +225,7 @@ img {
 
 h3 {
     background-color: #9D271F;
+    font-family: 'Comfortaa'; 
     text-align: center;
     color: white;
     padding-top: 8px;
@@ -171,6 +235,7 @@ h3 {
 }
 
 .monthEvent {
+    font-family: 'Comfortaa'; 
     width: auto;
     color: #68a9f8;
     font-weight: normal;
@@ -180,6 +245,7 @@ h3 {
 }
 
 .dayEvent {
+    font-family: 'Comfortaa'; 
     width: auto;
     color: black;
     font-weight: bold;
@@ -188,6 +254,7 @@ h3 {
 }
 
 .nameEvent {
+    font-family: 'Comfortaa'; 
     width: auto;
     color: black;
     font-weight: normal;
@@ -197,6 +264,7 @@ h3 {
 }
 
 .aboutEvent {
+    font-family: 'Comfortaa'; 
     width: auto;
     color: darkgray;
     font-weight: lighter;
