@@ -1,0 +1,207 @@
+/*----------------------UNIVERSAL---------------------------- */
+h2 {
+    color: black;
+    font-family: 'Comfortaa', cursive;
+    font-size: 38pt;
+    font-size: 3em;
+    font-weight: 100;
+    border-bottom: #AF0101 solid 3px;
+    padding-bottom: 10px;
+    /* display: inline-block;  */
+    /* position: fixed; */
+    width: fit-content;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    transition: .5s;
+}
+
+/*---------------------SECTION_3_OUR_TEAM------------------- */
+section {
+    width: 80vw;
+    margin: auto;
+}
+
+.title__container {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.teamMembers__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+div figure {
+    flex: 0 40%;
+}
+
+figure {
+    width: fit-content;
+}
+
+.figure__container {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    margin-bottom: 40px;
+}
+
+/* .figure__container:hover{
+    background-color: #4c4747;
+    transition: .5s;
+    color: white;
+} */
+
+.figure__container--content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 10px;
+}
+
+
+figcaption {
+    font-family: 'Cinzel', serif;
+    padding: .4% 3% 0% 3%;
+    background-color: #AF0101;
+    width: fit-content;
+    color: white;
+}
+
+figcaption:hover {
+    filter: opacity(80%);
+}
+
+
+a img:hover {
+    filter: opacity(50%);
+}
+
+img {
+    max-width: 100vw;
+    max-height: 50vh;
+    border-radius: 50%;
+}
+
+.small__img {
+    height: 20vh;
+}
+
+/*----------------MEDIA_QUERIES----------------------- */
+
+@media only screen and (max-width: 749px) {
+
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/*---------------------SECTION_4_OUR_EVENTS---------------------- */
+
+.section4__title--container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+}
+
+.imageClock {
+    order: 1;
+    margin-right: 10%;
+}
+
+.imageBeer {
+    order: 3;
+    margin-left: 10%;
+}
+
+.section4__title--flexorder {
+    order: 2;
+}
+
+.boxesEvent {
+    display: flex;
+    height: 38%;
+    width: 62%;
+    margin-top: 3%;
+    margin-left: 17%;
+}
+
+.redboxSalsa {
+    width: 100%;
+    text-align: center;
+    box-shadow: 1px 1px 8px lightgrey;
+    margin: 0 3%;
+}
+
+.redboxChristmas {
+    width: 100%;
+    text-align: center;
+    box-shadow: 1px 1px 8px lightgrey;
+    margin: 0 3%;
+}
+
+.redboxFinance {
+    width: 100%;
+    text-align: center;
+    box-shadow: 1px 1px 8px lightgrey;
+    margin: 0 3%;
+}
+
+h3 {
+    background-color: #9D271F;
+    text-align: center;
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.monthEvent {
+    width: auto;
+    color: #68a9f8;
+    font-weight: normal;
+    text-align: center;
+    padding: 5px;
+    margin-top: 3%;
+}
+
+.dayEvent {
+    width: auto;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+}
+
+.nameEvent {
+    width: auto;
+    color: black;
+    font-weight: normal;
+    text-align: center;
+    padding: 5px;
+    margin-top: 3%;
+}
+
+.aboutEvent {
+    width: auto;
+    color: darkgray;
+    font-weight: lighter;
+    font-size: smaller;
+    text-align: center;
+    padding: 5px;
+    margin-top: 3%;
+}
