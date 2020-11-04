@@ -5,12 +5,12 @@ html {
 
 body {
   align-content: center;
-  font-size: 50px;
+ 
 }
 
 .section {
-  font-size: 50;
-  padding: 24pc;
+  font-size: 10px;
+  padding: 14pc;
   margin-bottom: 10px;
 }
 
@@ -20,44 +20,49 @@ body {
 }
 
 h2 {
-  font-size: 10pc;
+  font-size: 4pc;
   color: black;
   width: fit-content;
   border-bottom: 12px solid #9a0000;
-  margin-left: 500;
+ 
 }
 
 p {
   color: black;
   margin-right: 10pc;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 form {
   align-items: center;
 }
 
-.nomDroite {
-  margin-right: 46pc;
+
+
+.nomDroite{
+margin-right: 33pc;
 }
+
 .nomPrenom {
   display: flex;
   justify-content: space-between;
   margin-top: 100px;
-  margin-right: 34pc;
+ 
 }
+
 .nomPrenomFormulaire {
   display: flex;
 }
 
 textarea {
+  
   height: 100px;
 }
 
 input,
 textarea {
-  width: 60%;
-  font-size: 40px;
+  width: 93%;
+  font-size: 20px;
   background-color: #ffffff;
   text-align: left;
   margin-left: 30px;
@@ -70,21 +75,20 @@ textarea {
 
 .submit {
   width: 14pc;
-  font-size: 50px;
+  font-size: 28px;
   background-color: #ffffff;
   color: black;
   text-align: center;
-  margin-top: 80px;
-  margin-left: 50pc;
-  padding: 30px;
+  margin-top: 60px;
+  padding: 20px;
   border-radius: 20px;
 }
 .submit:hover {
   background-color: #af0102;
 }
 
-@media only screen and (max-with: 749px) {
+ /* @media only screen and (max-with: 749px) {
   .nomDroite {
     margin-left: 60pc;
   }
-}
+}  */
