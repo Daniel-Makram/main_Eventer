@@ -175,6 +175,7 @@ header h1{
     margin-bottom: 170px;
     margin-left: 9%;
     font-size: 17px;
+    position:relative;
 } 
 
 .imageBeer img {
@@ -190,8 +191,8 @@ width: 180px;
 background-color: #AF0102;
 color: white;
 font-size: 16px;
-left: 12.7%;
-top: 115px;
+left: 4%;
+top: 20%;
 }
 
 
