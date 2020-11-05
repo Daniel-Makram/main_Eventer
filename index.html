@@ -129,45 +129,55 @@
 
     </section>
   <!-- SECTION_5-->
-    <!-- Form section start -->
+ 
 
-    <div class="section">
-      <div class="titre">
-        <h2>Need an Event ?</h2>
-      </div>
+  <!-- Form section start -->
 
-      <form method="post" action="mecontacter.js">
-
-        
-        <div class="nomPrenom">
-        <p class="p">Name *</p>
-        <span class="nomDroite"><p  class="p">Lastname *</p></span>
-        </div>
-        <div class="nomPrenomFormulaire">
-          <input name="nom" placeholder="Name" type="text" required />
-
-          <input name="nom" placeholder="Lastname" type="text" required />
-        </div>
-        
-        <p class="p">E-mail *</p>
-        <input name="email" placeholder="Email" type="email" required /><br />
-
-        <div>
-          <p class="p" >Description *</p>
-          <textarea
-            name="message"
-            placeholder="Description"
-            required
-          ></textarea>
-
-          <div>
-            <input type="submit" value="Send" class="submit" />
-          </div>
-        </div>
-      </form>
+<div class="section">
+    <div class="titre">
+      <h2>Need an Event ?</h2>
     </div>
 
-    <!-- Form section end -->
+    <form method="post" action="mecontacter.js">
+
+      
+        <div class = "allFormulaire"> 
+
+            <div class="nomPrenom"> 
+                <div class="nom"> 
+                    <p class="p">Name *</p>
+                     <input name="nom" placeholder="Name" type="text" required /> 
+                </div> 
+                <div class="prenom"> 
+                        <p  class="p">Lastname *</p>
+                         <input name="nom" placeholder="Lastname" type="text" required /> 
+                </div> 
+            </div>
+      
+      <p class="p">E-mail *</p>
+        <div class="message">
+            <input name="email" placeholder="Email" type="email" required /><br />
+        </div>
+      <div>
+        <p class="p" >Description *</p>
+        <textarea
+          name="message"
+          placeholder="Description"
+          required
+        ></textarea>
+
+        <div>
+            
+                <input type="submit" value="Send" class="submit" />
+            
+        </div>
+      </div>
+    
+  </div>
+
+</form>
+</div>
+  <!-- Form section end -->
 
 </body>
 

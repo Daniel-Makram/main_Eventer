@@ -54,7 +54,8 @@ figure {
   margin-bottom: 40px;
 }
 
-/* .figure__container:hover{
+/* 
+.figure__container:hover{
     background-color: #4c4747;
     transition: .5s;
     color: white;
@@ -203,97 +204,86 @@ h3 {
 
 /*---------------------SECTION_5_Need_an_EVENT? ( Wassim )---------------------- */
 
-/* (else Conflit)
-    html {
-    margin: 0;
-    padding: 0;
-  } */
 
 body {
-  align-content: center;
-}
+  align-content: center; 
+ } 
 
-.section {
-  /* (else Conflit) font-size: 10px; */
-  padding: 14pc;
-  margin-bottom: 10px;
-}
+.section { 
+ /* (else Conflit) font-size: 10px; */ 
+ margin-bottom: 10px; 
+} 
 
-.titre {
-  display: flex;
-  justify-content: center;
-}
+.titre { 
+ display: flex; 
+ justify-content: center; 
+} 
 
-/* (else Conflit)
-    h2 { 
-    font-size: 4pc;
-    color: black;
-    width: fit-content;
-    border-bottom: 12px solid #9a0000;
+ 
+.p { 
+ color: black; 
+ margin-right: 10pc; 
+ font-size: 25px; 
+} 
+
+form { 
+ margin-left: 20%; 
+} 
+
+.allFormulaire{ 
+ padding-left: 15%; 
+} 
+
+.nomPrenom{ 
+ display: flex;
+  /* flex-direction: column;  */
+} 
+
+.nomPrenom input{
+  width: 300px; 
+ } 
+
+.nom { 
+ padding-right: 10%; 
+} 
+
+textarea { 
+ height: 100px; 
+} 
+
+input, textarea { 
+ font-size: 20px; background-color:
+  #ffffff; text-align: left; 
+  margin-left: 30px; 
+  margin-right: 30px; 
+  margin-bottom: 10px; 
+  padding: 40px 10px 10px; 
+  border: 1px solid #af0102; 
+  border-radius: 20px; 
+ } 
+
+.submit { 
+ width: 15%; 
+ font-size: 28px; 
+ background-color: #ffffff;
+  color: black; 
+  text-align: center; 
+  margin-top: 60px; 
+  padding: 10px; 
+  border-radius: 20px; 
+ } 
+
+.submit:hover { 
+ background-color: #af0102; 
+} 
+
+@media only screen and (max-width: 700px) {
+  .nomPrenom {
+    flex-direction: column;
+    background-color: darkmagenta;
    
-  } */
-
-.p {
-  color: black;
-  margin-right: 10pc;
-  font-size: 35px;
+  }
 }
 
-form {
-  align-items: center;
-}
-
-.nomDroite {
-  margin-right: 24pc;
-}
-
-.nomPrenom {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 100px;
-}
-
-.nomPrenomFormulaire {
-  display: flex;
-}
-
-textarea {
-  height: 100px;
-}
-
-input,
-textarea {
-  width: 93%;
-  font-size: 20px;
-  background-color: #ffffff;
-  text-align: left;
-  margin-left: 30px;
-  margin-right: 30px;
-  margin-bottom: 10px;
-  padding: 50px 10px 10px;
-  border: 1px solid #af0102;
-  border-radius: 20px;
-}
-
-.submit {
-  width: 14pc;
-  font-size: 28px;
-  background-color: #ffffff;
-  color: black;
-  text-align: center;
-  margin-top: 60px;
-  padding: 20px;
-  border-radius: 20px;
-}
-.submit:hover {
-  background-color: #af0102;
-}
-
-/* @media only screen and (max-with: 749px ) { 
-    
-        .nomDroite{
-            margin-right: 2pc;
-            }
-  }   */
 
 /*---------------------SECTION_6_Main_Eventers ( Madeline )---------------------- */
