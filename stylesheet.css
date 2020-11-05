@@ -38,6 +38,7 @@ a {
     text-decoration: none;
     cursor: pointer;
     transition: 0.5s;
+    color: white;
 }
 
 
@@ -579,7 +580,7 @@ textarea {
     }
 
     .header__title--container img {
-        max-height: 15vh;
+        max-height: 20vh;
         max-width: 15vw;
     }
 

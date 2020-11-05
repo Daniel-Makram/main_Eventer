@@ -16,16 +16,16 @@
         <button class="burger">Open the menu</button>
         <nav class="header__nav--container">
             <ul class="header__nav__menu--liste">
-                <a>
+                <a href="our_changes.md"> 
                     <li>About</li>
                 </a>
-                <a>
+                <a href="#ourTeam">
                     <li>Team</li>
                 </a>
-                <a>
+                <a href="#ourEvents">
                     <li>Events</li>
                 </a>
-                <a>
+                <a href="#form">
                     <li>Contact Us</li>
                 </a>
             </ul>
@@ -38,7 +38,7 @@
 
     <!-- --------------------------------------SECTION_3_OUR_TEAM---------------------------------------------- -->
     <section class="main">
-        <section id="3_Our_Team">
+        <section id="ourTeam">
 
             <div class="title__container">
                 <h2>Our Team</h2>
@@ -104,7 +104,7 @@
 
         <!-- --------------------------------------SECTION4_OUR_EVENTS -------------------------------------------------->
 
-        <section class="ourEvents">
+        <section id="ourEvents" class="ourEvents">
 
             <div class="section4__title--container">
                 <div class="imageClock">
@@ -157,45 +157,46 @@
         </section>
         <!-- SECTION_5-->
         <!-- Form section start -->
-
-        <div class="section">
-            <div class="titre">
-                <h2>Need an Event ?</h2>
-            </div>
-
-            <form method="post" action="mecontacter.js">
-
-
-                <div class="nomPrenom">
-                    <p class="p">Name *</p>
-                    <span class="nomDroite">
-                        <p class="p">Lastname *</p>
-                    </span>
-                </div>
-                <div class="nomPrenomFormulaire">
-                    <input name="nom" placeholder="Name" type="text" required />
-
-                    <input name="nom" placeholder="Lastname" type="text" required />
+        <section id="form">
+            <div class="section">
+                <div class="titre">
+                    <h2>Need an Event ?</h2>
                 </div>
 
-                <p class="p">E-mail *</p>
-                <input name="email" placeholder="Email" type="email" required /><br />
+                <form method="post" action="mecontacter.js">
 
-                <div>
-                    <p class="p">Description *</p>
-                    <textarea name="message" placeholder="Description" required></textarea>
+
+                    <div class="nomPrenom">
+                        <p class="p">Name *</p>
+                        <span class="nomDroite">
+                            <p class="p">Lastname *</p>
+                        </span>
+                    </div>
+                    <div class="nomPrenomFormulaire">
+                        <input name="nom" placeholder="Name" type="text" required />
+
+                        <input name="nom" placeholder="Lastname" type="text" required />
+                    </div>
+
+                    <p class="p">E-mail *</p>
+                    <input name="email" placeholder="Email" type="email" required /><br />
 
                     <div>
-                        <input type="submit" value="Send" class="submit" />
+                        <p class="p">Description *</p>
+                        <textarea name="message" placeholder="Description" required></textarea>
+
+                        <div>
+                            <input type="submit" value="Send" class="submit" />
+                        </div>
                     </div>
-                </div>
-            </form>
-        </div>
+                </form>
+            </div>
+        </section>
 
         <!-- Form section end -->
 
         <!-- ---------------------SECTION_6_eventers-------------------------------------------------->
-        <footer class="section_6">
+        <footer  class="section_6">
             <h4>
                 MAIN EVENTERS
             </h4>
@@ -207,7 +208,9 @@
             </div>
         </footer>
     </section>
-    <script src="app.js"></scipt>
-</body>
+    <script src="app.js">
+        < /scipt> <
+        /body>
 
-</html>
+        <
+        /html>
