@@ -1,15 +1,33 @@
 /*----------------------UNIVERSAL---------------------------- */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    font-size: 3em;
+    font-weight: bold;
+
+}
+
 h2 {
-  color: black;
-  font-family: "Comfortaa", cursive;
-  font-size: 38pt;
-  font-size: 3em;
-  font-weight: 100;
-  border-bottom: #af0101 solid 3px;
-  padding-bottom: 10px;
-  /* display: inline-block;  */
-  /* position: fixed; */
-  width: fit-content;
+    color: black;
+    font-family: 'Comfortaa', cursive;
+    font-size: 3em;
+    font-weight: 100;
+    padding-bottom: 10px;
+    width: fit-content;
+    height: fit-content;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    margin: 10px auto;
+    border-bottom: #AF0101 solid 3px;
+    width: 80%;
 }
 
 p {
@@ -22,7 +40,197 @@ a {
   transition: 0.5s;
 }
 
+
+
+ul {
+    list-style: none;
+    color: white;
+
+}
+
+
+/* --------------------HEADER_NAV--------------------------- */
+
+.header--img {
+    background-image: url(img/header_Background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: brightness(70%);
+    width: 100%;
+    height: 0;
+    padding-top: 33.68%;
+    z-index: 0;
+    position: relative;
+}
+
+.header__nav--container {
+    position: absolute;
+    top: 5%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin: 0;
+    z-index: 1;
+}
+
+ul a {
+    margin-right: 4%;
+}
+
+ul a:hover {
+    color: #AF0101;
+}
+
+ul li {
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header__title--container {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header__title--container img {
+    border-radius: 0;
+    width: fit-content;
+}
+
+header .header--img {
+    animation-delay: ;
+    animation: header__hover--brightness 1.5s  linear;
+    animation-fill-mode: forwards;
+}
+
+header span{
+    animation-delay: 1s;
+    animation: ease-in;
+    animation:header__hover--title--red 1.5s linear;
+    animation-fill-mode: forwards;
+}
+header h1{
+    animation-delay: 1s;
+    animation:header__hover--title--white 1.5s linear;
+    animation-fill-mode: forwards;
+}
+/* .header__title--container:hover .test {
+    color: #AF0101;
+    
+}
+
+.header__title--container:hover span {
+    color: white;
+} */
+
+/* .header__title--red {
+    color: #AF0101;
+} */
+
+@keyframes header__hover--brightness {
+    from {
+        filter: brightness(70%);
+    }
+    to {
+        filter: brightness(40%);
+    }
+}
+@keyframes header__hover--title--red{
+    from{
+        color: white;
+    }
+    to{
+        color: #AF0101;
+    }
+}
+@keyframes header__hover--title--white{
+    from{
+        color: #AF0101;
+    }
+    to{
+        color: white;
+    }
+}
+
+
+/*---------------------SECTION_2_WHO_WE_ARE------------------- */
+.WhoWeAre {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 90%;
+    margin-top: 50px;
+    margin-bottom: 170px;
+    margin-left: 9%;
+    font-size: 17px;
+} 
+
+.imageBeer img {
+    border-radius: 0;
+    margin-top: 14%;
+}
+
+.imageBeerCaption {
+position: absolute;
+font-family: 'Comfortaa'; 
+border: solid 3px white;
+width: 180px;
+background-color: #AF0102;
+color: white;
+font-size: 16px;
+left: 12.7%;
+top: 115px;
+}
+
+
+.rightsideImage {
+display: flex;
+flex-direction: column;
+margin-top: 100px;
+margin-left: 40px;
+margin-bottom: 70px;
+width: 50% ;
+text-align: justify;
+}
+
+.paraone {
+margin-bottom: -50px;
+color:darkgray;
+}
+
+.paratwo {
+color: darkgray;
+width: 57%;
+margin-left: 240px;
+margin-top: -160px;
+font-size: 17px;
+margin-bottom: 100px;
+text-align: justify;
+}
+
+
+/* .paragraphsWhoWeAre {
+    color: darkgrey;   
+   /* margin-left: 510px; */
+   font-size: 18px;
+   text-align: justify;
+} */
+
+
 /*---------------------SECTION_3_OUR_TEAM ( Daniel ) ------------------- */
+
 section {
   width: 80vw;
   margin: auto;
@@ -64,10 +272,13 @@ figure {
 } */
 
 .figure__container--content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+}
+.figure__container--content p{
+    margin-top: 5%;
 }
 
 figcaption {
@@ -130,11 +341,13 @@ img {
 }
 
 .boxesEvent {
-  display: flex;
-  height: 38%;
-  width: 62%;
-  margin-top: 3%;
-  margin-left: 17%;
+
+    display: flex;
+    height: 38%;
+    width: 69%;
+    margin-top: 3%;
+    margin-left: 15%;
+
 }
 
 .redboxSalsa {
@@ -159,49 +372,55 @@ img {
 }
 
 h3 {
-  background-color: #9d271f;
-  text-align: center;
-  color: white;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  font-weight: bold;
-  margin: 0;
+
+    background-color: #9D271F;
+    font-family: 'Comfortaa'; 
+    text-align: center;
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-weight: bold;
+    margin: 0;
 }
 
 .monthEvent {
-  width: auto;
-  color: #68a9f8;
-  font-weight: normal;
-  text-align: center;
-  padding: 5px;
-  margin-top: 3%;
+    font-family: 'Comfortaa'; 
+    width: auto;
+    color: #68a9f8;
+    font-weight: normal;
+    text-align: center;
+    padding: 5px;
+    margin-top: 3%;
 }
 
 .dayEvent {
-  width: auto;
-  color: black;
-  font-weight: bold;
-  text-align: center;
-  padding: 5px;
+    font-family: 'Comfortaa'; 
+    width: auto;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
 }
 
 .nameEvent {
-  width: auto;
-  color: black;
-  font-weight: normal;
-  text-align: center;
-  padding: 5px;
-  margin-top: 3%;
+    font-family: 'Comfortaa'; 
+    width: auto;
+    color: black;
+    font-weight: normal;
+    text-align: center;
+    padding: 5px;
+    margin-top: 3%;
+
 }
 
 .aboutEvent {
-  width: auto;
-  color: darkgray;
-  font-weight: lighter;
-  font-size: smaller;
-  text-align: center;
-  padding: 5px;
-  margin-top: 3%;
+    font-family: 'Comfortaa'; 
+    width: auto;
+    font-weight: lighter;
+    font-size: smaller;
+    text-align: center;
+    padding: 5px;
+    margin-top: 3%;
 }
 
 /*---------------------SECTION_5_Need_an_EVENT? ( Wassim )---------------------- */
@@ -307,4 +526,30 @@ textarea {
 }
 
 
+
 /*---------------------SECTION_6_Main_Eventers ( Madeline )---------------------- */
+
+.section_6 {
+    color: black;
+    font-family: 'Comfortaa', cursive;
+    font-size: 38pt;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    padding-bottom: 50px;
+    background-color: #E1E1E1;
+	background-image: url(img/swirl_pattern.png);
+	background-repeat: repeat;
+	background-position: left;
+}
+
+h4{
+    padding-top: 50px;
+}
+
+.logo img {
+    width:  50px;
+    height: 50px;
+    justify-content: space-around;
+}
+
