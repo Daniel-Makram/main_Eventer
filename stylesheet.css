@@ -215,12 +215,15 @@ h3 {
     align-items: center;
     justify-content: space-around;
     text-align: center;
-    padding-top: 8px;
+    padding-bottom: 50px;
     background-color: #E1E1E1;
 	background-image: url(img/swirl_pattern.png);
-	background-repeat: no-repeat;
+	background-repeat: repeat;
 	background-position: left;
-    background-size: cover;
+}
+
+h4{
+    padding-top: 50px;
 }
 
 .logo img {
