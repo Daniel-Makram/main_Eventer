@@ -1,15 +1,33 @@
 /*----------------------UNIVERSAL---------------------------- */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    font-size: 3em;
+    font-weight: bold;
+
+}
+
 h2 {
-  color: black;
-  font-family: "Comfortaa", cursive;
-  font-size: 38pt;
-  font-size: 3em;
-  font-weight: 100;
-  border-bottom: #af0101 solid 3px;
-  padding-bottom: 10px;
-  /* display: inline-block;  */
-  /* position: fixed; */
-  width: fit-content;
+    color: black;
+    font-family: 'Comfortaa', cursive;
+    font-size: 3em;
+    font-weight: 100;
+    padding-bottom: 10px;
+    width: fit-content;
+    height: fit-content;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    margin: 10px auto;
+    border-bottom: #AF0101 solid 3px;
+    width: 80%;
 }
 
 p {
@@ -22,7 +40,130 @@ a {
   transition: 0.5s;
 }
 
+
+ul {
+    list-style: none;
+    color: white;
+}
+
+
+/* --------------------HEADER_NAV--------------------------- */
+
+.header--img {
+    background-image: url(img/header_Background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: brightness(70%);
+    width: 100%;
+    height: 0;
+    padding-top: 33.68%;
+    z-index: 0;
+    position: relative;
+}
+
+.header__nav--container {
+    position: absolute;
+    top: 5%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin: 0;
+    z-index: 1;
+}
+
+ul a {
+    margin-right: 4%;
+}
+
+ul a:hover {
+    color: #AF0101;
+}
+
+ul li {
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header__title--container {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header__title--container img {
+    border-radius: 0;
+    width: fit-content;
+}
+
+header .header--img {
+    animation-delay: ;
+    animation: header__hover--brightness 1.5s  linear;
+    animation-fill-mode: forwards;
+}
+
+header span{
+    animation-delay: 1s;
+    animation: ease-in;
+    animation:header__hover--title--red 1.5s linear;
+    animation-fill-mode: forwards;
+}
+header h1{
+    animation-delay: 1s;
+    animation:header__hover--title--white 1.5s linear;
+    animation-fill-mode: forwards;
+}
+/* .header__title--container:hover .test {
+    color: #AF0101;
+    
+}
+
+.header__title--container:hover span {
+    color: white;
+} */
+
+/* .header__title--red {
+    color: #AF0101;
+} */
+
+@keyframes header__hover--brightness {
+    from {
+        filter: brightness(70%);
+    }
+    to {
+        filter: brightness(40%);
+    }
+}
+@keyframes header__hover--title--red{
+    from{
+        color: white;
+    }
+    to{
+        color: #AF0101;
+    }
+}
+@keyframes header__hover--title--white{
+    from{
+        color: #AF0101;
+    }
+    to{
+        color: white;
+    }
+}
+
 /*---------------------SECTION_3_OUR_TEAM ( Daniel ) ------------------- */
+
 section {
   width: 80vw;
   margin: auto;
@@ -61,10 +202,13 @@ figure {
 } */
 
 .figure__container--content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+}
+.figure__container--content p{
+    margin-top: 5%;
 }
 
 figcaption {
@@ -192,14 +336,14 @@ h3 {
 }
 
 .aboutEvent {
-  width: auto;
-  color: darkgray;
-  font-weight: lighter;
-  font-size: smaller;
-  text-align: center;
-  padding: 5px;
-  margin-top: 3%;
+    width: auto;
+    font-weight: lighter;
+    font-size: smaller;
+    text-align: center;
+    padding: 5px;
+    margin-top: 3%;
 }
+
 
 /*---------------------SECTION_5_Need_an_EVENT? ( Wassim )---------------------- */
 
