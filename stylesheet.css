@@ -26,6 +26,8 @@ a {
 section {
   width: 80vw;
   margin: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .title__container {
@@ -206,82 +208,101 @@ h3 {
 
 
 body {
-  align-content: center; 
- } 
+  align-content: center;
+}
 
-.section { 
- /* (else Conflit) font-size: 10px; */ 
- margin-bottom: 10px; 
-} 
+.section {
+  /* (else Conflit) font-size: 10px; */
+  margin-bottom: 10px;
+  
+}
 
-.titre { 
- display: flex; 
- justify-content: center; 
-} 
+.titre {
+  display: flex;
+  justify-content: center;
+}
 
- 
-.p { 
- color: black; 
- margin-right: 10pc; 
- font-size: 25px; 
-} 
 
-form { 
- margin-left: 20%; 
-} 
+.p {
+  color: black;
+  margin-right: 10pc;
+  font-size: 25px;
+}
 
-.allFormulaire{ 
- padding-left: 15%; 
-} 
+form {
+  margin-left: 20%;
+}
 
-.nomPrenom{ 
- display: flex;
+.allFormulaire {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 5%;
+  
+}
+
+.nomPrenom {
+  display: flex;
   /* flex-direction: column;  */
-} 
+}
 
-.nomPrenom input{
-  width: 300px; 
- } 
+.nomPrenom input {
+  width: 300px;
+}
 
-.nom { 
- padding-right: 10%; 
-} 
+.nom {
+  padding-right: 10%;
+}
 
-textarea { 
- height: 100px; 
-} 
+textarea {
+  height: 100px;
+}
 
-input, textarea { 
- font-size: 20px; background-color:
-  #ffffff; text-align: left; 
-  margin-left: 30px; 
-  margin-right: 30px; 
-  margin-bottom: 10px; 
-  padding: 40px 10px 10px; 
-  border: 1px solid #af0102; 
-  border-radius: 20px; 
- } 
+input,
+textarea {
+  font-size: 20px;
+  background-color:
+    #ffffff;
+  text-align: left;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 10px;
+  padding: 40px 10px 10px;
+  border: 1px solid #af0102;
+  border-radius: 20px;
+}
 
-.submit { 
- width: 15%; 
- font-size: 28px; 
- background-color: #ffffff;
-  color: black; 
-  text-align: center; 
-  margin-top: 60px; 
-  padding: 10px; 
-  border-radius: 20px; 
- } 
+.submit {
+  width: 15%;
+  font-size: 28px;
+  background-color: #ffffff;
+  color: black;
+  text-align: center;
+  margin-top: 60px;
+  padding: 10px;
+  border-radius: 20px;
+}
 
-.submit:hover { 
- background-color: #af0102; 
-} 
+.submit:hover {
+  background-color: #af0102;
+}
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1080px) {
   .nomPrenom {
+    
     flex-direction: column;
-    background-color: darkmagenta;
-   
+    
+  }
+
+  .allFormulaire {
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  .submit {
+    width: 25%;
+  
   }
 }
 
