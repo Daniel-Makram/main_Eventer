@@ -9,6 +9,32 @@
 
 <body>
 
+    <!-----------------------------------------HEADER_NAV----------------------------------------------- -->
+
+    <header>
+        <div class="header--img"></div>
+        <nav class="header__nav--container">
+            <ul>
+                <a>
+                    <li>About</li>
+                </a>
+                <a>
+                    <li>Team</li>
+                </a>
+                <a>
+                    <li>Events</li>
+                </a>
+                <a>
+                    <li>Contact Us</li>
+                </a>
+            </ul>
+        </nav>
+        <div class="header__title--container"> 
+            <h1>Main <span class="header__title--red">Eventer</span></h1>
+            <img href='#' src="/img/logo_cut.png">
+        </div>
+    </header>
+
     <!-- --------------------------------------SECTION_3_OUR_TEAM---------------------------------------------- -->
 
     <section id="3_Our_Team">
@@ -75,7 +101,7 @@
 
     </section>
 
-    <!-- ---------------------SECTION4_OUR_EVENTS -------------------------------------------------->
+    <!-- --------------------------------------SECTION4_OUR_EVENTS -------------------------------------------------->
 
     <section class="ourEvents">
 
@@ -140,8 +166,8 @@
 
         
         <div class="nomPrenom">
-          <p>Name *</p>
-          <p class="nomDroite">Lastname *</p>
+        <p class="p">Name *</p>
+        <span class="nomDroite"><p  class="p">Lastname *</p></span>
         </div>
         <div class="nomPrenomFormulaire">
           <input name="nom" placeholder="Name" type="text" required />
@@ -149,11 +175,11 @@
           <input name="nom" placeholder="Lastname" type="text" required />
         </div>
         
-        <p>E-mail *</p>
+        <p class="p">E-mail *</p>
         <input name="email" placeholder="Email" type="email" required /><br />
 
         <div>
-          <p>Description *</p>
+          <p class="p" >Description *</p>
           <textarea
             name="message"
             placeholder="Description"
