@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -157,7 +154,48 @@
         </div>
 
     </section>
+  <!-- SECTION_5-->
+    <!-- Form section start -->
+
+    <div class="section">
+      <div class="titre">
+        <h2>Need an Event ?</h2>
+      </div>
+
+      <form method="post" action="mecontacter.js">
+
+        
+        <div class="nomPrenom">
+        <p class="p">Name *</p>
+        <span class="nomDroite"><p  class="p">Lastname *</p></span>
+        </div>
+        <div class="nomPrenomFormulaire">
+          <input name="nom" placeholder="Name" type="text" required />
+
+          <input name="nom" placeholder="Lastname" type="text" required />
+        </div>
+        
+        <p class="p">E-mail *</p>
+        <input name="email" placeholder="Email" type="email" required /><br />
+
+        <div>
+          <p class="p" >Description *</p>
+          <textarea
+            name="message"
+            placeholder="Description"
+            required
+          ></textarea>
+
+          <div>
+            <input type="submit" value="Send" class="submit" />
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- Form section end -->
 
 </body>
 
 </html>
+
