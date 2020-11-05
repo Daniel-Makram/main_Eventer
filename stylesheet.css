@@ -344,7 +344,6 @@ h3 {
     margin-top: 3%;
 }
 
-
 /*---------------------SECTION_5_Need_an_EVENT? ( Wassim )---------------------- */
 
 /* (else Conflit)
@@ -441,3 +440,24 @@ textarea {
   }   */
 
 /*---------------------SECTION_6_Main_Eventers ( Madeline )---------------------- */
+
+.section_6 {
+    color: black;
+    font-family: 'Comfortaa', cursive;
+    font-size: 38pt;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    padding-top: 8px;
+    background-color: #E1E1E1;
+	background-image: url(img/swirl_pattern.png);
+	background-repeat: no-repeat;
+	background-position: left;
+    background-size: cover;
+}
+
+.logo img {
+    width:  50px;
+    height: 50px;
+    justify-content: space-around;
+}
